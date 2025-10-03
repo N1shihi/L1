@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Укажите количество секунд, пример: go run main.go <количество_секунд>")
+		fmt.Println("Укажите количество секунд, пример: go run main.go <количество_секунд> ")
 		return
 	}
 

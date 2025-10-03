@@ -48,7 +48,7 @@ func main() {
 
 	go func() {
 		<-sigCh
-		fmt.Println("\nSIGINT received — shutting down...")
+		fmt.Println("\nПрограмма прерывается...")
 		cancel()
 		signal.Stop(sigCh)
 	}()
@@ -72,5 +72,5 @@ loop:
 
 	wg.Wait()
 
-	fmt.Println("All workers exited, program terminating.")
+	fmt.Println("Все воркеры завершили работу.")
 }
